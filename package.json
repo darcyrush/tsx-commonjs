@@ -1,0 +1,16 @@
+{
+  "name": "tsx-commonjs",
+  "scripts": {
+    "test-tsx": "TSX_TSCONFIG_PATH=tsconfig.json node --import tsx --test-reporter spec --test 'test/**/*.test.ts'",
+    "test-ts-node": "TS_NODE_PROJECT=tsconfig.json node --require ts-node/register --test-reporter spec --test 'test/**/*.test.ts'"
+  },
+  "type": "commonjs",
+  "engines": {
+    "node": ">= 21"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.3"
+  }
+}
